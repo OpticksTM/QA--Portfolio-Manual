@@ -4,6 +4,7 @@ Documentação de cenários de teste, planejamento de qualidade e reporte de fal
 
 # 1. Planejamento de Testes (Cenários)
 Sistema testado: SauceDemo (https://www.saucedemo.com/)
+
 Funcionalidade: Tela de Login
 
 | ID | Cenário de Teste | Comportamento Esperado | Status |
