@@ -25,3 +25,18 @@ Funcionalidade: Filtro de listagem de produtos
 | --- | --- | --- | --- |
 | CT04 | Selecionar o filtro "Name (Z to A)" na vitrine de produtos. | Os produtos devem reorganizar a ordem alfabética de forma decrescente, exibindo itens iniciados pelas últimas letras do alfabeto no topo. | Passou |
 | CT05 | Selecionar o filtro "Price (low to high)" na vitrine de produtos. | Os produtos devem se organizar do mais barato para o mais caro de forma crescente. | Passou |
+
+---
+
+---
+
+# 3. Fluxo de Carrinho e Checkout
+Sistema testado: SauceDemo (https://www.saucedemo.com/)
+
+Funcionalidade: Adicionar produtos, gerenciar o carrinho e preencher dados de entrega
+
+| ID | Cenário de Teste | Comportamento Esperado | Status |
+| --- | --- | --- | --- |
+| CT06 | Adicionar um produto ao carrinho na vitrine. | O ícone do carrinho deve atualizar o contador exibindo o número "1". | Passou |
+| CT07 | Tentar avançar no preenchimento do Checkout sem preencher o campo "First Name". | O sistema deve bloquear o avanço e exibir uma mensagem de erro informando que o campo é obrigatório. | Passou |
+
