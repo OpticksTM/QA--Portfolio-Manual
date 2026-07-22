@@ -15,7 +15,7 @@ Funcionalidade: Tela de Login
 
 ---
 
-# 3. Validação de Filtros (Ordenação de Produtos)
+# 2. Validação de Filtros (Ordenação de Produtos)
 
 Sistema testado: SauceDemo (https://www.saucedemo.com/)
 
