@@ -76,3 +76,15 @@ O navegador retorna para as telas internas (carrinho/produtos) sem exigir uma no
 # Resultado Esperado:
 Após o logout, a sessão deve ser completamente destruída. O uso do botão "Voltar" do navegador deve manter o usuário na tela de login ou forçar uma nova autenticação, impedindo o acesso a páginas restritas.
 
+---
+
+# 6. Fluxo de Compra Final (End-to-End)
+Sistema testado: SauceDemo (https://www.saucedemo.com/)
+
+Funcionalidade: Preenchimento de dados de entrega, resumo do pedido e finalização da compra
+
+| ID | Cenário de Teste | Comportamento Esperado | Status |
+| --- | --- | --- | --- |
+| CT10 | Preencher os campos obrigatórios de checkout (First Name, Last Name, Postal Code) e avançar. | O sistema deve direcionar o usuário para a página de resumo do pedido (Checkout Overview) exibindo o produto e os valores corretos. | Passou |
+| CT11 | Clicar no botão "Finish" na tela de resumo do pedido. | O sistema deve processar a compra, exibir a tela de sucesso (`Checkout: Complete!`) e a mensagem de agradecimento pelo pedido. | Passou |
+
