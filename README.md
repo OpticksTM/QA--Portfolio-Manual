@@ -50,6 +50,6 @@ Funcionalidade: Menu lateral, navegação e encerramento de sessão
 
 | ID | Cenário de Teste | Comportamento Esperado | Status |
 | --- | --- | --- | --- |
-| CT08 | Clicar no menu lateral (hambúrguer) e selecionar a opção "Logout". | O sistema deve encerrar a sessão atual e redirecionar o usuário de volta para a tela inicial de login. | Passou |
+| CT08 | Clicar no menu lateral e selecionar a opção "Logout". | O sistema deve encerrar a sessão atual e redirecionar o usuário de volta para a tela inicial de login. | Passou |
 | CT09 | Tentar retornar à página de produtos utilizando o botão "Voltar" do navegador após realizar o Logout. | O sistema deve barrar o acesso e manter o usuário na tela de login por questões de segurança. | Passou |
 
