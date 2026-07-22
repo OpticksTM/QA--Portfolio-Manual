@@ -22,6 +22,7 @@ Bug 01: Erro de ordenação de valores
 
 Módulo: Página de Produtos (Inventário)
 Severidade: Média
+
 Passos para reproduzir:
 
 1. Acessar o site `https://www.saucedemo.com/`
