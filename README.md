@@ -21,12 +21,15 @@ Exemplo prático de reporte de falha encontrado durante a exploração do sistem
 Bug 01: Erro de ordenação de valores
 
 Módulo: Página de Produtos (Inventário)
+
 Severidade: Média
 
 Passos para reproduzir:
 
 1. Acessar o site `https://www.saucedemo.com/`
+
 2. Fazer login com o usuário padrão.
+
 3. No filtro de ordenação (canto superior direito), selecionar **"Price (high to low)"** (Preço do maior para o menor).
 
 Resultado Obtido: O sistema mistura alguns valores sem respeitar a ordem decrescente exata no topo da lista.
