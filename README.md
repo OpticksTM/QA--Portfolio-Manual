@@ -28,7 +28,6 @@ Funcionalidade: Filtro de listagem de produtos
 
 ---
 
-
 # 3. Fluxo de Carrinho e Checkout
 Sistema testado: SauceDemo (https://www.saucedemo.com/)
 
@@ -41,15 +40,39 @@ Funcionalidade: Adicionar produtos, gerenciar o carrinho e preencher dados de en
 
 ---
 
----
-
 # 4. Navegação do Menu Lateral e Logout
+
 Sistema testado: SauceDemo (https://www.saucedemo.com/)
 
 Funcionalidade: Menu lateral, navegação e encerramento de sessão
 
 | ID | Cenário de Teste | Comportamento Esperado | Status |
 | --- | --- | --- | --- |
-| CT08 | Clicar no menu lateral e selecionar a opção "Logout". | O sistema deve encerrar a sessão atual e redirecionar o usuário de volta para a tela inicial de login. | Passou |
-| CT09 | Tentar retornar à página de produtos utilizando o botão "Voltar" do navegador após realizar o Logout. | O sistema deve barrar o acesso e manter o usuário na tela de login por questões de segurança. | Passou |
+| CT08 | Clicar no menu lateral (hambúrguer) e selecionar a opção "Logout". | O sistema deve encerrar a sessão atual e redirecionar o usuário de volta para a tela inicial de login. | Passou |
+| CT09 | Tentar retornar à página de produtos utilizando o botão "Voltar" do navegador após realizar o Logout. | O sistema deve barrar o acesso e manter o usuário na tela de login por questões de segurança. | Falhou |
+
+---
+
+## 5. Relatório de Bugs (Bug Report)
+
+* ID do Bug: BUG-01
+* Título: Possibilidade de navegar para páginas internas após o Logout usando o botão "Voltar" do navegador.
+* Módulo / Tela: Tela de Login e Sessão do Usuário
+* Severidade: Alta (Problema de Segurança / Controle de Sessão)
+* Ambiente: SauceDemo (https://www.saucedemo.com/) - Navegador Google Chrome
+
+# Descrição:
+Após o usuário realizar o processo de Logout com sucesso, o sistema redireciona corretamente para a tela de login. No entanto, ao utilizar o botão "Voltar" (seta para esquerda) do navegador, o sistema permite que o usuário visualize novamente as páginas internas (como o carrinho e o catálogo de produtos) sem estar autenticado.
+
+# Passos para Reproduzir:
+1. Acesse o site do SauceDemo e faça login com credenciais válidas (`standard_user` / `secret_sauce`).
+2. Abra o menu lateral esquerdo e clique em Logout.
+3. Observe que a tela de login é exibida corretamente.
+4. Clique no botão "Voltar" (seta para a esquerda) do navegador.
+
+# Resultado Obtido:
+O navegador retorna para as telas internas (carrinho/produtos) sem exigir uma nova autenticação.
+
+# Resultado Esperado:
+Após o logout, a sessão deve ser completamente destruída. O uso do botão "Voltar" do navegador deve manter o usuário na tela de login ou forçar uma nova autenticação, impedindo o acesso a páginas restritas.
 
