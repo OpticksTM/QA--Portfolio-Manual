@@ -29,4 +29,5 @@ Passos para reproduzir:
 3. No filtro de ordenação (canto superior direito), selecionar **"Price (high to low)"** (Preço do maior para o menor).
 
 Resultado Obtido: O sistema mistura alguns valores sem respeitar a ordem decrescente exata no topo da lista.
+
 Resultado Esperado: O produto de maior valor do e-commerce deveria aparecer em primeiro lugar absoluto.
