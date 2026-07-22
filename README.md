@@ -30,8 +30,24 @@ Passos para reproduzir:
 
 2. Fazer login com o usuário padrão.
 
-3. No filtro de ordenação (canto superior direito), selecionar **"Price (high to low)"** (Preço do maior para o menor).
+3. No filtro de ordenação (canto superior direito)
+
+selecionar "Price (high to low)" (Preço do maior para o menor).
 
 Resultado Obtido: O sistema mistura alguns valores sem respeitar a ordem decrescente exata no topo da lista.
 
+
 Resultado Esperado: O produto de maior valor do e-commerce deveria aparecer em primeiro lugar absoluto.
+
+---
+
+# 3. Validação de Filtros (Ordenação de Produtos)
+
+Sistema testado: SauceDemo (https://www.saucedemo.com/)
+
+Funcionalidade: Filtro de listagem de produtos
+
+| ID | Cenário de Teste | Comportamento Esperado | Status |
+| --- | --- | --- | --- |
+| CT06 | Selecionar o filtro "Name (Z to A)" na vitrine de produtos. | Os produtos devem reorganizar a ordem alfabética de forma decrescente, exibindo itens iniciados pelas últimas letras do alfabeto no topo. | Passou |
+| CT07 | Selecionar o filtro "Price (low to high)" na vitrine de produtos. | Os produtos devem se organizar do mais barato para o mais caro de forma crescente. | Passou |
