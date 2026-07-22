@@ -28,7 +28,6 @@ Funcionalidade: Filtro de listagem de produtos
 
 ---
 
----
 
 # 3. Fluxo de Carrinho e Checkout
 Sistema testado: SauceDemo (https://www.saucedemo.com/)
@@ -39,4 +38,19 @@ Funcionalidade: Adicionar produtos, gerenciar o carrinho e preencher dados de en
 | --- | --- | --- | --- |
 | CT06 | Adicionar um produto ao carrinho na vitrine. | O ícone do carrinho deve atualizar o contador exibindo o número "1". | Passou |
 | CT07 | Tentar avançar no preenchimento do Checkout sem preencher o campo "First Name". | O sistema deve bloquear o avanço e exibir uma mensagem de erro informando que o campo é obrigatório. | Passou |
+
+---
+
+---
+
+# 4. Navegação do Menu Lateral e Logout
+Sistema testado: SauceDemo (https://www.saucedemo.com/)
+
+Funcionalidade: Menu lateral, navegação e encerramento de sessão
+
+| ID | Cenário de Teste | Comportamento Esperado | Status |
+| --- | --- | --- | --- |
+| CT08 | Clicar no menu lateral (hambúrguer) e selecionar a opção "Logout". | O sistema deve encerrar a sessão atual e redirecionar o usuário de volta para a tela inicial de login. | Passou |
+
+| CT09 | Tentar retornar à página de produtos utilizando o botão "Voltar" do navegador após realizar o Logout. | O sistema deve barrar o acesso e manter o usuário na tela de login por questões de segurança. | Passou |
 
