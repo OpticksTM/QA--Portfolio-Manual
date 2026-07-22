@@ -49,5 +49,5 @@ Funcionalidade: Filtro de listagem de produtos
 
 | ID | Cenário de Teste | Comportamento Esperado | Status |
 | --- | --- | --- | --- |
-| CT06 | Selecionar o filtro "Name (Z to A)" na vitrine de produtos. | Os produtos devem reorganizar a ordem alfabética de forma decrescente, exibindo itens iniciados pelas últimas letras do alfabeto no topo. | Passou |
-| CT07 | Selecionar o filtro "Price (low to high)" na vitrine de produtos. | Os produtos devem se organizar do mais barato para o mais caro de forma crescente. | Passou |
+| CT04 | Selecionar o filtro "Name (Z to A)" na vitrine de produtos. | Os produtos devem reorganizar a ordem alfabética de forma decrescente, exibindo itens iniciados pelas últimas letras do alfabeto no topo. | Passou |
+| CT05 | Selecionar o filtro "Price (low to high)" na vitrine de produtos. | Os produtos devem se organizar do mais barato para o mais caro de forma crescente. | Passou |
